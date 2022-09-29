@@ -1,0 +1,244 @@
+h4 {
+    color: #f0a500;
+    text-align: center;
+    font-size: 18px;
+    font-weight: 800;
+    margin-bottom: 20px;
+}
+.form-input-group textarea,
+.form-row input[type="radio"] + label,
+.form-row input[type="file"] + label,
+.form-row input,
+select option,
+select{
+    font-size: 18px;
+    width: 100%;
+    padding: 0.7em;
+    line-height: 1.4;
+    background-color: #ffffff;
+    border: 1px solid #e5e5e5;
+    border-radius: 3px;
+    -webkit-transition: 0.35s ease-in-out;
+    -moz-transition: 0.35s ease-in-out;
+    -o-transition: 0.35s ease-in-out;
+    transition: 0.35s ease-in-out;
+    transition: all 0.35s ease-in-out;
+}
+/* this under code used for outline none from ios */
+.form-input-group textarea,
+.form-row input {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+}
+.form-input-group textarea{
+    resize: none;
+    min-height: 100px;
+}
+.form-input-group textarea:focus,
+.form-row input:focus {
+    outline: 0;
+    border-color: #bd8200;
+}
+.form-row input:checked {
+    opacity: 1;
+}
+.form-row input[type="file"],
+.form-row input[type="radio"] {
+    display: none;
+}
+.form-row input[type="file"] + label,
+.form-row input[type="radio"] + label{
+    display: inline-block;
+    width: 50%;
+    text-align: center;
+    float: left;
+    border-radius: 0;
+    padding: 0.8em;
+    color: #f0a500;
+    cursor: pointer;
+}
+.form-row input[type="file"] + label{
+    width: 100%;
+}
+.form-row input[type="submit"],
+.form-row input[type="radio"]:checked + label,
+.form-row input:checked + label:before,
+select:focus,
+select:active {
+  background-color: #f0a500;
+  color: #ffffff;
+  border-color: #bd8200;
+}
+select option{
+    color: #000000;
+}
+.form-row input:checked + label:after {
+    opacity: 1;
+}
+.form-input-group {
+    /* margin-bottom: 1em; */
+    zoom: 1;
+}
+/* submit button  */
+.form-input-group .btn{
+    width: 50%;
+    margin-right: 25%
+}
+.form-row input[type="submit"]{
+    cursor: pointer;
+}
+.form-row input[type="submit"]:hover{
+    background-color:rgba(240, 165, 0, 0.7);
+}
+.form-input-group:before,
+.form-input-group:after {
+    content: "";
+    display: table;
+}
+.form-input-group:after {
+    clear: both;
+}
+.col-half {
+    padding-right: 10px;
+    float: left;
+    width: 50%;
+}
+.col-half:last-of-type {
+    padding-right: 0;
+}
+.form-row input[type="radio"] + label:first-of-type {
+    border-top-left-radius: 3px;
+    border-bottom-left-radius: 3px;
+}
+.form-row input[type="radio"] + label:last-of-type {
+    border-top-right-radius: 3px;
+    border-bottom-right-radius: 3px;
+}
+.form-row .btn{
+    margin-top: 25px;
+}
+.form-section .floting{
+    text-align: right;
+}
+/* Container Start Area */
+.form-section{
+    margin: 100px 20px 100px 20px;
+}
+.form-section .container{
+    max-width: 38em;
+    padding: 1em 3em 2em 3em;
+    margin: 0em auto;
+    background-color: #f1f1f1;
+    border-radius: 4.2px;
+    /* box-shadow: 0px 3px 10px -2px rgba(0, 0, 0, 0.2); */
+}
+.form-row {
+    zoom: 1;
+    margin-bottom: 20px;
+}
+.form-row::before,
+.form-row::after{
+    content: "";
+    display: table;
+}
+.form-row:after {
+    clear: both;
+}
+/* =========================== */
+/* File Upload */
+input[type="file"]{
+    display: none;
+}
+.file-upload label{
+    display: block;
+    position: relative;
+    background-color: #025bee;
+    color: #ffffff;
+    font-size: 18px;
+    text-align: center;
+    width: 300px;
+    padding: 18px 0;
+    margin: auto;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 25px;
+}
+#img-box{
+    display: none;
+}
+#container{
+    width: 100%;
+    border: 1px dashed blue;
+    border-radius: 6px;
+}
+.image_container{
+    display: inline-block;
+    margin: auto;
+}
+.image_container img {
+    height: 125px;
+    width: 200px;
+    object-fit: cover;
+    margin: 10px;
+}
+.image_container .remove-img{
+    top: 0px;
+    right: 0px;
+    position: absolute;
+    background-color: rgb(233, 3, 3);
+    width: 20px;
+    height: 20px;
+    line-height: 33px;
+    border-radius: 50%;
+}
+.image_container span {
+    top: -6px;
+    right: 1px;
+    color: #ffffff;
+    font-size: 28px;
+    font-weight: normal;
+    cursor: pointer;
+}
+@media (max-width: 609px) {
+    .image_container img {
+        height: 100px;
+        width: 150px;
+    }
+}
+@media (max-width: 450px){
+    .form-section .container{
+        padding: 1em 2em 1em;
+    }
+    .col-half {
+      width: 100%;
+      padding-right: 0;
+    }
+    select {
+      height: 3.4em;
+      line-height: 2;
+    }
+  .image_container img {
+      height: 130px;
+      width: 220px;
+  }
+  .file-upload label{
+    width: 100%;
+  }
+}
+@media (max-width: 350px){
+    .form-section{
+        width: 100%;
+        margin: 0 auto;
+        margin-top: 80px;
+    }
+    .form-row .btn{
+        width: 100%;
+        margin: auto;
+        margin-top: 25px;
+
+    }
+    .btn input[type="submit"]{
+        width: 60%;
+    }
+}
